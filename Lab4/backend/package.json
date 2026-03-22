@@ -1,0 +1,16 @@
+{
+  "name": "lab3-backend",
+  "version": "1.0.0",
+  "description": "Laboratory work 3 - Library REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Fedulova Daria",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
