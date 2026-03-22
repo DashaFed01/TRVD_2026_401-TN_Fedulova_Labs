@@ -1,3 +1,4 @@
+const cors = require('cors');
 const express = require('express');
 const booksController = require('./controllers/booksController');
 const authController = require('./controllers/authController');
@@ -8,6 +9,10 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 
 app.get('/', (req, res) => {
   res.json({
